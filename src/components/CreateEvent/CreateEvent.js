@@ -6,7 +6,6 @@ import 'react-date-range/dist/styles.css'; // main css file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 // import TimePicker from 'react-time-picker-input'
 // import "react-time-picker-input/dist/components/TimeInput.css"
-import DateTimePicker from 'react-datetime-picker';
 import { UseContext } from '../../App';
 import { useNavigate } from 'react-router-dom';
 const CreateEvent = () => {
@@ -45,10 +44,10 @@ const CreateEvent = () => {
 
     return (
         <div className='bg-[#F6F2FF] min-h-screen pb-20'>
-            <div className='max-w-[745px] mx-auto'>
-                <h2 className='text-center text-[50px] py-20 font-bold text-[#240D57]'>Schedule a event</h2>
+            <div className='md:max-w-[745px] w-full mx-auto'>
+                <h2 className='text-center md:text-[50px] text-[28px] py-20 font-bold text-[#240D57]'>Schedule a event</h2>
                 <div>
-                    <div>
+                    <div className='flex justify-center '>
                         <div
                             className='flex items-center gap-5'
                         >
@@ -84,20 +83,10 @@ const CreateEvent = () => {
                             </div>
 
                         </div>
-                        <div>
-                            {/*   <TimePicker
-                                onChange={(newValue) => setValue(value)}
-                                value={value}
-                            /> */}
-                            {/*   <DateTimePicker 
-                                disableCalendar={true}
-                                  onChange={onChange} 
-                                  value={value} />
- */}
-                        </div>
+                      
                     </div>
                     <div>
-                        <div className='px-20'>
+                        <div className='md:px-20 px-4'>
 
                             <div className="card px-10 flex-shrink-0 mt-20 w-full shadow-2xl bg-base-100">
                                 <p className='text-center mt-7 text-2xl font-bold text-[#240D57]'>Please Enter Your Event Details</p>
@@ -132,7 +121,7 @@ const CreateEvent = () => {
 
                                         </div>
                                         <div className="form-control mt-6">
-                                            <button className="btn text-white bg-[#8456EC]">Next <span>
+                                            <button className="btn bg-[#8456EC] text-white hover:bg-[#8456EC]">Next <span>
                                                 <BiRightArrowAlt className='text-[26px]' />
                                             </span></button>
                                         </div>

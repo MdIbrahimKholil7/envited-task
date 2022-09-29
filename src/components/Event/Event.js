@@ -19,11 +19,11 @@ const Event = () => {
             key: "selection",
         }
     ])
-    console.log(eventDetails)
+
     // formating date 
     const startDate = format(date[0].startDate, 'PP').split(',')[0].split(' ').reverse()
     const endDate = format(date[0].endDate, 'PP').split(',')[0].split(' ').reverse()
-    const sDate = <span>{startDate}</span>
+
     const handleDate = (item) => {
         setDate([item.selection])
         setUpdate(true)
