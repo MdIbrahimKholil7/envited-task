@@ -34,7 +34,7 @@ const Event = () => {
                 <div className="hero-content w-full px-0 md:px-20 py-0 justify-between items-start flex-col lg:flex-row-reverse">
                     <img src={
                         eventImg
-                    } className="sm:max-w-[500px] w-full sm:mx-auto  mb-10 lg:mb-0 rounded-lg shadow-2xl" alt='eventImg' />
+                    } className="sm:max-w-[500px] w-full sm:mx-auto lg:mx-1  mb-10 lg:mb-0 rounded-lg shadow-2xl" alt='eventImg' />
                     <div 
                     className='px-5'
                     >
