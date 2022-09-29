@@ -10,7 +10,7 @@ const Home = () => {
             <div className="hero min-h-screen bg-[#F6F2FF] pt-8">
                 <div className="hero-content flex-col-reverse lg:flex-row">
                     <div>
-                        <img src={landingImg} alt='homeImg' />
+                        <img className='md:w-[540px]' src={landingImg} alt='homeImg' />
                         <button
                             onClick={() => navigate('/create')}
                             className="bg-gradient-to-r from-[#8456EC] to-[#E87BF8] py-[16px] rounded-[10px] block lg:hidden mx-auto"
@@ -18,7 +18,7 @@ const Home = () => {
                             <img className='px-[21px]' src={btnImg} alt="" />
                         </button>
                     </div>
-                    <div className='text-center lg:text-right lg:mb-0 mb-[55px]'>
+                    <div className='text-center lg:text-right lg:mb-0 mb-[55px] lg:pr-5'>
                         <div className="lg:text-5xl md:text-[30px] xs:text-[36px] font-bold">
                             <span
                                 className='block md:text-[64px]  text-[36px] text-[#240D57] font-bold leading-[100%]'>Imagine if</span>
