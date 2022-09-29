@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import CreateEvent from "./components/CreateEvent/CreateEvent";
 import Home from "./components/Home/Home";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
         <>
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/create" element={<CreateEvent />} />
             </Routes>
         </>
     );

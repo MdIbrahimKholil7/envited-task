@@ -1,8 +1,10 @@
 import React from 'react';
 import landingImg from '../../assets/image 1.png'
 import btnImg from '../../assets/btn.png'
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+    const navigate=useNavigate()
     return (
         <div>
             <div className="hero min-h-screen bg-[#F6F2FF] pt-8">
@@ -32,6 +34,7 @@ const Home = () => {
                         <p className="py-6 text-[#4F4F4F] text-center lg:text-right text-[16px] md:text-[24px]  md:px-40 lg:px-0 lg:w-full lg:pl-40">Easily host and share events with your friends across any social media.</p>
                         <div className='flex justify-end items-center'>
                             <button
+                            onClick={()=>navigate('/create')}
                                 className="bg-gradient-to-r from-[#8456EC] to-[#E87BF8] py-[16px] rounded-[10px] hidden lg:block"
                             >
                                 <img className='px-[21px]' src={btnImg} alt="" />
